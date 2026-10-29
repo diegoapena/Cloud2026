@@ -32,6 +32,8 @@ namespace Cloud2026.Core
         [Tooltip("Si es true, intenta realizar login anónimo automático tras inicializar.")]
         [SerializeField] private bool autoLoginAnonymous = false;
 
+        [SerializeField] private UGSRemoteConfigService remoteConfigService;
+
         public IAuthService AuthService => authService;
 
         public ICloudCodeService CloudCodeService => cloudCodeService;
@@ -71,6 +73,11 @@ namespace Cloud2026.Core
                 {
                     await authService.SignInAnonymouslyAsync();
                 }
+
+                if (remoteConfigService != null && authService.IsSignedIn)
+                {
+                    await remoteConfigService.InicializarYDescargar();
+                }
             }
         }
 
@@ -80,6 +87,7 @@ namespace Cloud2026.Core
             cloudCodeService = EnsureComponent(cloudCodeService);
             turnMatchService = EnsureComponent(turnMatchService);
             cloudSaveService = EnsureComponent(cloudSaveService);
+            remoteConfigService = EnsureComponent(remoteConfigService);
         }
 
         /// <summary>
@@ -92,6 +100,7 @@ namespace Cloud2026.Core
             {
                 return current;
             }
+
 
             var found = GetComponentInChildren<T>();
             return found != null ? found : gameObject.AddComponent<T>();

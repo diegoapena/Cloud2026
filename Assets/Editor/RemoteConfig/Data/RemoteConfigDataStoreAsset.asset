@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 469c24fdb3bd6431b92cc1465bd9166b, type: 3}
+  m_Name: RemoteConfigDataStoreAsset
+  m_EditorClassIdentifier: Unity.RemoteConfig.Editor::Unity.RemoteConfig.Editor.RemoteConfigDataStore
+  _rsKeyList: "[\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"e0fa00f4-b0f2-4ca6-814f-1f27169fc7b4\"\r\n   
+    },\r\n    \"rs\": {\r\n      \"key\": \"vida_base\",\r\n      \"type\": \"int\",\r\n     
+    \"value\": 100\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\":
+    \"75698fe0-0d65-4421-a482-fa111b21916d\"\r\n    },\r\n    \"rs\": {\r\n     
+    \"key\": \"ataque_base\",\r\n      \"type\": \"int\",\r\n      \"value\": 10\r\n   
+    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"b0ed732f-4f96-41e9-9af8-ae0699644753\"\r\n   
+    },\r\n    \"rs\": {\r\n      \"key\": \"defensa_base\",\r\n      \"type\": \"int\",\r\n     
+    \"value\": 5\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\":
+    \"0a5201f4-0f98-4d30-9dc5-2b827d199581\"\r\n    },\r\n    \"rs\": {\r\n     
+    \"key\": \"multiplicador_dificultad\",\r\n      \"type\": \"float\",\r\n     
+    \"value\": 1.0\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\":
+    \"497c3a10-50f4-4fb0-bd77-d748235a7b7d\"\r\n    },\r\n    \"rs\": {\r\n     
+    \"key\": \"tabla_heroes\",\r\n      \"type\": \"json\",\r\n      \"schemaId\":
+    null,\r\n      \"value\": {\r\n        \"heroes\": [\r\n          {\r\n           
+    \"id\": \"guerrero\",\r\n            \"vida\": 140,\r\n            \"ataque\":
+    12,\r\n            \"defensa\": 9,\r\n            \"velocidad\": 8\r\n         
+    },\r\n          {\r\n            \"id\": \"arquera\",\r\n            \"vida\":
+    90,\r\n            \"ataque\": 17,\r\n            \"defensa\": 4,\r\n           
+    \"velocidad\": 9\r\n          },\r\n          {\r\n            \"id\": \"mago\",\r\n           
+    \"vida\": 80,\r\n            \"ataque\": 21,\r\n            \"defensa\": 3,\r\n           
+    \"velocidad\": 7\r\n          }\r\n        ]\r\n      }\r\n    }\r\n  }\r\n]"
+  _rsLastCachedKeyList: "[\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"e0fa00f4-b0f2-4ca6-814f-1f27169fc7b4\"\r\n   
+    },\r\n    \"rs\": {\r\n      \"key\": \"vida_base\",\r\n      \"type\": \"int\",\r\n     
+    \"value\": 100\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\":
+    \"75698fe0-0d65-4421-a482-fa111b21916d\"\r\n    },\r\n    \"rs\": {\r\n     
+    \"key\": \"ataque_base\",\r\n      \"type\": \"int\",\r\n      \"value\": 10\r\n   
+    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"b0ed732f-4f96-41e9-9af8-ae0699644753\"\r\n   
+    },\r\n    \"rs\": {\r\n      \"key\": \"defensa_base\",\r\n      \"type\": \"int\",\r\n     
+    \"value\": 5\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\":
+    \"0a5201f4-0f98-4d30-9dc5-2b827d199581\"\r\n    },\r\n    \"rs\": {\r\n     
+    \"key\": \"multiplicador_dificultad\",\r\n      \"type\": \"float\",\r\n     
+    \"value\": 1.0\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\":
+    \"497c3a10-50f4-4fb0-bd77-d748235a7b7d\"\r\n    },\r\n    \"rs\": {\r\n     
+    \"key\": \"tabla_heroes\",\r\n      \"type\": \"json\",\r\n      \"schemaId\":
+    null,\r\n      \"value\": {\r\n        \"heroes\": [\r\n          {\r\n           
+    \"id\": \"guerrero\",\r\n            \"vida\": 140,\r\n            \"ataque\":
+    12,\r\n            \"defensa\": 9,\r\n            \"velocidad\": 8\r\n         
+    },\r\n          {\r\n            \"id\": \"arquera\",\r\n            \"vida\":
+    90,\r\n            \"ataque\": 17,\r\n            \"defensa\": 4,\r\n           
+    \"velocidad\": 9\r\n          },\r\n          {\r\n            \"id\": \"mago\",\r\n           
+    \"vida\": 80,\r\n            \"ataque\": 21,\r\n            \"defensa\": 3,\r\n           
+    \"velocidad\": 7\r\n          }\r\n        ]\r\n      }\r\n    }\r\n  }\r\n]"
+  _environments: "[\r\n  {\r\n    \"projectId\": \"9b00fa35-7258-45b5-bb26-26becbe403fd\",\r\n   
+    \"name\": \"production\",\r\n    \"id\": \"80bf9893-4330-4b8c-a21b-94da497c9afa\",\r\n   
+    \"isDefault\": true,\r\n    \"createdAt\": \"2026-10-29T01:10:02Z\",\r\n    \"updatedAt\":
+    \"2026-10-29T01:10:02Z\"\r\n  }\r\n]"
