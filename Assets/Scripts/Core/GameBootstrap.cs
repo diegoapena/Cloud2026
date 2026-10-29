@@ -33,7 +33,7 @@ namespace Cloud2026.Core
         [SerializeField] private bool autoLoginAnonymous = false;
 
         [SerializeField] private UGSRemoteConfigService remoteConfigService;
-
+        [SerializeField] private UGSEconomiaService economiaService;
         public IAuthService AuthService => authService;
 
         public ICloudCodeService CloudCodeService => cloudCodeService;
@@ -78,6 +78,10 @@ namespace Cloud2026.Core
                 {
                     await remoteConfigService.InicializarYDescargar();
                 }
+                if (economiaService != null)
+                {
+                    await economiaService.CargarEconomia();
+                }
             }
         }
 
@@ -88,6 +92,8 @@ namespace Cloud2026.Core
             turnMatchService = EnsureComponent(turnMatchService);
             cloudSaveService = EnsureComponent(cloudSaveService);
             remoteConfigService = EnsureComponent(remoteConfigService);
+            economiaService = EnsureComponent(economiaService);
+
         }
 
         /// <summary>
